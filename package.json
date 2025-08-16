@@ -4,12 +4,15 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix"
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+  "src/**/*.js": "npm run lint"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
@@ -23,7 +26,9 @@
     "eslint": "^9.33.0",
     "eslint-plugin-jest": "^29.0.1",
     "globals": "^16.3.0",
+    "husky": "^9.1.7",
     "jest": "^30.0.5",
-    "jest-environment-jsdom": "^30.0.5"
+    "jest-environment-jsdom": "^30.0.5",
+    "lint-staged": "^16.1.5"
   }
 }
