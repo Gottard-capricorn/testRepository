@@ -4,4 +4,7 @@ describe("Test function sum", () => {
     it("return 7", () => {
         expect(sum(3,4)).toEqual(7);
     });
+    it("return 5", () => {
+        expect(sum(3,2)).toEqual(5);
+    });
 });
