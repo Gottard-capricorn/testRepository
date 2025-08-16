@@ -4,10 +4,12 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "modules",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
@@ -19,6 +21,7 @@
     "@types/jest": "^30.0.0",
     "babel-jest": "^30.0.5",
     "eslint": "^9.33.0",
+    "eslint-plugin-jest": "^29.0.1",
     "globals": "^16.3.0",
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.0.5"
