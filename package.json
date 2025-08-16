@@ -12,7 +12,7 @@
     "prepare": "husky"
   },
   "lint-staged": {
-  "src/**/*.js": "npm run lint"
+  "src/**/*.js": "npm run lint:fix"
   },
   "devDependencies": {
     "@babel/core": "^7.28.3",
